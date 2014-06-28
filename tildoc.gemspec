@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Tildoc::VERSION
   spec.authors       = ["kyoendo"]
   spec.email         = ["postagie@gmail.com"]
-  spec.summary       = %q{Add String#~ for removing leading margins of a heredoc.}
+  spec.summary       = %q{Add String#~ for removing leading margins of heredocs.}
   spec.homepage      = "https://github.com/melborne/tildoc"
   spec.license       = "MIT"
 

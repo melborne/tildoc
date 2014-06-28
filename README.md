@@ -1,6 +1,6 @@
 # Tildoc
 
-Add String#~ for removing leading margins of a heredoc.
+Add String#~ for removing leading margins of heredocs.
 
 ## Installation
 
