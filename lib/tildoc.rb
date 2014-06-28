@@ -1,5 +1,11 @@
 require "tildoc/version"
 
 module Tildoc
-  # Your code goes here...
+  def ~
+    margin = scan(/^ +/).map(&:size).min
+    gsub(/^ {#{margin}}/, '')
+  end
 end
+
+String.send(:include, Tildoc)
+
