@@ -1,6 +1,6 @@
 # Tildoc
 
-Add String#~ for removing leading margins of a here document.
+Add String#~ for removing leading margins of a heredoc.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-This
+This;
 
 ```ruby
 class ATool
@@ -35,7 +35,7 @@ end
 
 puts ATool.help
 ```
-becomes this, with `String#~`.
+becomes this, with `~` prefix to a heredoc.
 No leading margins.
 
 ```ruby
