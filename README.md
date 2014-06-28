@@ -1,6 +1,6 @@
 # Tildoc
 
-TODO: Write a gem description
+Add String#~ for removing leading margins of a here document.
 
 ## Installation
 
@@ -18,7 +18,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This
+
+```ruby
+class ATool
+  def self.help
+    lines = <<-EOS
+Atool is one of the greatest tool in the world.
+This helps you a lot on your daily work.
+Your life will be changed with `Atool`!!
+....
+    EOS
+    lines
+  end
+end
+
+puts ATool.help
+```
+becomes this, with `String#~`.
+No leading margins.
+
+```ruby
+class ATool
+  def self.help
+    lines = ~<<-EOS
+      Atool is one of the greatest tool in the world.
+      This helps you a lot on your daily work.
+      Your life will be changed with `Atool`!!
+      ....
+    EOS
+    lines
+  end
+end
+
+puts ATool.help
+```
 
 ## Contributing
 
