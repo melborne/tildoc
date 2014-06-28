@@ -2,8 +2,8 @@ require "tildoc/version"
 
 module Tildoc
   def ~
-    margin = scan(/^ +/).map(&:size).min
-    gsub(/^ {#{margin}}/, '')
+    margin = scan(/^[ \t]*(?=\S)/).map(&:size).min
+    gsub(/^[ \t]{#{margin}}/, '')
   end
 end
 
